@@ -1,0 +1,16 @@
+
+spring:
+    application:
+        name: dconnect-discovery
+    cloud:
+        loadbalancer:
+            ribbon:
+                enabled: false
+
+server:
+    port: 8761
+
+eureka:
+    client:
+        fetch-registry: false
+        register-with-eureka: false
