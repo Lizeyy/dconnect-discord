@@ -1,0 +1,39 @@
+
+spring:
+    application:
+        name: dconnect-discord
+
+server:
+    port: 8090
+
+eureka:
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        service-url:
+            default-zone: http://localhost:8761/eureka/
+    instance:
+        preferIpAddress: true
+
+discord:
+    bot:
+        token: MTA0MTQwNTEyMjE3OTI0ODI1OQ.Gh6OwT.QtujUs48jBBJUPPw2Pygz27cVqz9NNme0fagQQ
+
+feign:
+    client:
+        config:
+            discord-service:
+                connectTimeout: 100
+                readTimeout: 100
+                loggerLevel: basic
+                retryer: feign.Retryer.Default
+            infrastructure-service:
+                connectTimeout: 100
+                readTimeout: 100
+                loggerLevel: basic
+                retryer: feign.Retryer.Default
+
+        discord-service:
+            baseUrl: http://localhost:8090
+        infrastructure-service:
+            baseUrl: http://localhost:8091
