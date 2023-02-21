@@ -1,0 +1,12 @@
+{
+  "name": "connection_create",
+  "description": "Stworzenie nowego połączenia",
+  "options": [
+    {
+      "name": "nazwa",
+      "description": "Nazwa nowego połączenia",
+      "type": 3,
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "connection_join",
+  "description": "Dołączenie do połączenia",
+  "options": [
+    {
+      "name": "token",
+      "description": "Token połączenia",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
