@@ -5,6 +5,7 @@ import com.dconnect.discord.command.SlashCommands;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import org.bouncycastle.util.Strings;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 

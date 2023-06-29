@@ -1,0 +1,12 @@
+{
+  "name": "message",
+  "description": "Rozesłanie wiadomości",
+  "options": [
+    {
+      "name": "text",
+      "description": "Treść wiadomości",
+      "type": 3,
+      "required": true
+    }
+  ]
+}

@@ -20,7 +20,7 @@ public class DiscordClientConfiguration {
         return DiscordClientBuilder.create(token)
                 .build()
                 .gateway()
-                .setInitialPresence(ignore -> ClientPresence.online(ClientActivity.playing("Hej!")))
+                .setInitialPresence(ignore -> ClientPresence.online(ClientActivity.playing("Bot włączony!")))
                 .login()
                 .block();
     }

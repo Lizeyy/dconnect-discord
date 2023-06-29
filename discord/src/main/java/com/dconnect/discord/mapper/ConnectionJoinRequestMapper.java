@@ -1,12 +1,14 @@
 package com.dconnect.discord.mapper;
 
-import com.dconnect.client.protocol.domain.request.ConnectionCreateRequest;
 import com.dconnect.client.protocol.domain.request.ConnectionJoinRequest;
 import com.dconnect.discord.error.BadOptionException;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
 import discord4j.core.object.command.ApplicationCommandInteractionOption;
 import discord4j.core.object.command.ApplicationCommandInteractionOptionValue;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor(access = AccessLevel.NONE)
 public class ConnectionJoinRequestMapper {
 
     public static ConnectionJoinRequest map(ChatInputInteractionEvent event) {

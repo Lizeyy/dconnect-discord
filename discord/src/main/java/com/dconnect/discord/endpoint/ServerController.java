@@ -1,6 +1,7 @@
 package com.dconnect.discord.endpoint;
 
 import com.dconnect.client.protocol.domain.response.ServerInfo;
+import com.dconnect.client.protocol.domain.response.UserInfo;
 import com.dconnect.discord.service.DiscordApiService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,5 +17,10 @@ public class ServerController {
     @GetMapping("/api/discord/server/{id}")
     public ServerInfo getServerInfo(@PathVariable("id") String serverId) {
         return discordApiService.getServerInfo(serverId);
+    }
+
+    @GetMapping("/api/discord/user/{id}")
+    public UserInfo getUserInfo(@PathVariable("id") String userId) {
+        return discordApiService.getUserInfo(userId);
     }
 }

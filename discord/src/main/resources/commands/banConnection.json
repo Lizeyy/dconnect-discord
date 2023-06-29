@@ -1,0 +1,18 @@
+{
+  "name": "connection_ban",
+  "description": "Usunięcie serwera z połączenia",
+  "options": [
+    {
+      "name": "server",
+      "description": "Id serwera",
+      "type": 3,
+      "required": true
+    },
+    {
+      "name": "reason",
+      "description": "Powód wyrzucenia",
+      "type": 3,
+      "required": true
+    }
+  ]
+}
